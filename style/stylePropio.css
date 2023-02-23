@@ -1,23 +1,38 @@
 body{
     background-color: rgb(194, 224, 250);
+    
+}
+.container-header{
+    display: flex;
+    flex-direction: column;
+}
+.block{
+    justify-content: center;
+
 }
 .portada{
     width: 100%;
+    
 }
 
 h1{
     background-color: black;
     color: white;
     text-align: center;
-    position: relative;
-    bottom: 60px;
+    margin: 0px;
     font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
+.barra{
+    position: relative;
+    bottom: 185px;
+}
+
 .logo{
     height: 200px;
     position: sticky;
-    left: 1700px;
-    bottom: 700px;
+    left:100em; 
+    bottom:45em; 
+    
 }
 h2, h3, p{
     text-align: center;
@@ -27,15 +42,16 @@ h2, h3, p{
     font-size: 35px;
 }
 nav a{
-    display: inline;
-    margin: 15px;
-    position: relative;
-    bottom: 200px;
-    font-size: large;
+    padding: 4px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
     letter-spacing: -2px;
     transition: 700ms ease;
     margin-bottom: 0.8rem;
-    color: black;
+    color: rgb(255, 255, 255);
+    background-color: rgba(1, 0, 37, 0.877);
+    border-radius: 5px;
+    text-decoration:none;
     
 }
 nav a:hover{
@@ -43,17 +59,22 @@ nav a:hover{
     letter-spacing: 1px;
 }
 .sitio{
-    color: rgb(233, 184, 25);
-    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
 }
+main{
+    display: flex;
+    justify-content: center;
+
+}
+
 section{
+    
     padding: 20px;
     border-radius: 20px;
     width: 50%;
-    position: relative;
-    bottom: 300px;
-    left: 23%;
-    background-color: rgb(233, 184, 25);
+    background-color: rgb(1, 0, 37);
+    color:aliceblue;
 }
 @media (max-width: 1250px) {
     section{
@@ -61,7 +82,7 @@ section{
     }
 }
 p > a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: large;
     font-weight: bold;
@@ -74,4 +95,44 @@ p > span{
 }
 table{
     width: 100%;
+}
+.container-maps{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.maps > h4{
+    text-align: center;
+}
+input{
+    margin-top: 10px;
+}
+#street{
+    width: 77%;
+}
+#city{
+    width: 46%;
+}
+.radio-gender{
+    display: inline;
+    margin-left: 100px;
+}
+.radio-grade{
+    display: inline;
+}
+form > h3, form > p{
+    text-align: start;
+}
+.container-form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+button{
+    background-color: rgba(1, 0, 37, 0.877);
+    color: white;
+    border-radius: 5px;
+    height: 30px;
 }
